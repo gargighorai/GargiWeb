@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style/style.css">
+    <title>Payment Form</title>
+</head>
+<body>
+  <div class="container" style="background-color: rgb(245, 242, 242);">
+    <header>
+      <div class="two">
+          <img src="./assets/img/logo.png" />
+       </div>
+      
+        <h1> Dr N K Ghorai</h1>
+     </header>
+    <form  action="" >
+       <h2 class="main_heading" style="text-align: center; color: darkgreen;"
+       >Payment Form</h2>
+       <hr>
+       <h3>User Information</h3>
+       <h4 class="required" style="color: red;">Required fields are marked with *</h4> 
+       <p>Name: * <input type="text" name="name" value="" required placeholder="Name">
+       </p>
+       <Fieldset>
+        <legend> Gender</legend>
+       <p>
+       Male: <input type="radio" name="gender" id="male" placeholder="name">
+       Female: <input type="radio" name="gender" id="female">
+      </p>
+    </Fieldset>
+    <p><label>Address *</label>
+        <textarea name="address" id="address" cols="30" rows="2" placeholder="address"></textarea>
+      </p>
+      <p>
+        Email: * <input type="email" name="email" id="email" placeholder="email" required></textarea>
+      </p>
+      <p>
+        Mobile *:<input type="number" name="mobile" id="mobile" placeholder="mobile" ></textarea>
+      </p>
+      <p>
+        Pincode *: <input type="number" name="pincode" placeholder="pincode" id="pincode">
+      </p>
+    
+      <hr>
+      
+      <h3>Payment Information</h3>
+      <p> Card type: *
+        <select name="card_type" id="card_type" required>
+            <option value="">--Select a card type--</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="mastarcard">Master card</option>
+        </select>
+      </p>
+      <p>
+        Card Number: * <input type="number" name="card_no" id="card_no" placeholder="1111-2222-3333-4444">
+      </p>
+      <p>
+        Exp Date: <input type="date" name="exp_date" id="exp_date">
+      </p>
+      <p>
+        CVV: <input type="password" name="cvv" id="cvv"> </p>
+        <input type="submit" value="Pay Now">
+    </form>
+  </div>
+</body>
+</html>
