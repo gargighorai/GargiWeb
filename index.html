@@ -10,11 +10,13 @@
      <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
     <style>
         .panel.panel-bisque{
             border: 1px solid bisque;
             background-color: bisque;
-            color: #0087FF;
+            color: #0a2943;
         }
         .panel.panel-blue{
             border: 1px solid #0087FF;
@@ -36,6 +38,12 @@
             background-color: #ebe58b;
             color: #000000;
         }
+        .panel.panel-black{
+            border: 1px solid #000000;
+            background-color: #000000;
+            color: #FFFFFF;
+            max-height: 1%;
+        }
         .container{
             background-color: blueviolet;
         }
@@ -51,43 +59,42 @@
             font-size: 50px;
             font-weight: bold;
             text-align: center;
+            color:#265279 ;
         }
         H6{
             text-align: center;
-            color: darkblue;
+            color: rgb(84, 143, 71);
             font-family: 'Times New Roman', Times, serif;
             font-style: italic;
             padding: 2px;
         }
         H4{
             text-align: center;
-            color: darkblue;
             font-family: 'Times New Roman', Times, serif;
             font-style: italic;
-            padding: 2px;
-            font-size: 14px;
+            font-size: 12px;
         }
         img{
             max-width: 30%;
             height: 30%;
-            border: 1px solid blue;
+            border: 1px solid bisque;
             border-radius: 50%;
-            background-color: darkblue;
+            background-color: rgb(233, 191, 75);
         }
-       .user{
-            width: 130px;
-            height: 130px;
+        /* .user{
+            width: 30%;
+            height: 30%;
             border: 1px solid blue;
             border-radius: 70px;
             background-color: darkblue;
         }
         .logo{
-            max-width: 30%;
-            height: 130px;
+            width: 140px;
+            height: 140px;
             border: 1px solid blue;
             border-radius: 70px;
             background-color: darkblue;
-        }
+        } */
         footer{
             text-align: center;
             color: darkblue;
@@ -98,23 +105,25 @@
     </style>
 </head>
 <body class="py-2">
-
-    <div class="container bg-light">
-        <div class="row" >
-            <div class="col-2  ms-3 panel panel-bisque">
-                <img class="float-left img-fluid" src="./img/logo.png" alt="logo" />
-                <H4>Regd. No-44428 of WBMC</H4>
+    <div class="container bg-light mb-1">
+        <div class="row mb-0" >
+            <div class="col-2 panel panel-bisque mb-1  mt-0">
+                <img class="float-left img-fluid" src="./assets/img/logo.png" alt="logo">
             </div>
-            <div class="col-6.5 panel panel-bisque">
+            <div class="col-8 panel panel-bisque mb-1 mt-0">
                 <h1> Dr N K Ghorai</h1>
                 <h6> MBBS (Cal) MD(Gynae & Obstt)(Cal) </h6> 
             </div>
-            <div class="col-2  panel panel-bisque">
-                <img class="float-left img-fluid me-3 " src="./img/user.png" alt="user"/>
-               <h4> drnkghorai@gmail.com</h4>
-               <h4> www.drnkghorai.com</h4>
+            <div class="col-2 float-left panel panel-bisque mb-1 mt-0">
+                <img class="img-fluid" src="./assets/img/MyPhoto.png" alt="user">
+             </div>
+            <div class="col-12 panel panel-black mt-0 mb-1">
+                <div class="row h-10">
+                 <H4 class="col-3">Reg.No-44428 of WBMC</H4> 
+                 <h4 class="col-6"> drnkghorai@gmail.com</h4>
+               <h4 class="col-3"> www.drnkghorai.com</h4> 
             </div>
-           
+        </div>
      </div>
            <div class="row">
             <div class="col-3 panel panel-bisque">
@@ -157,3 +166,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+        
+ 
