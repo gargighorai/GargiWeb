@@ -12,7 +12,7 @@
      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
  
     <!-- <link rel="stylesheet" href="style/style.css"> -->
-    <style>
+     <style>
         .panel.panel-bisque{
             border: 1px solid bisque;
             background-color: bisque;
@@ -25,12 +25,25 @@
         }
         .panel.panel-pink{
             border: 1px solid #FAD2E1;
-            background-color: #FAD2E1;
-            color: #F84F7F;
+            background-color: rgb(222, 211, 184);
+            color: red;
         }
         .panel.panel-purple{
             border: 1px solid #DFCCFF;
-            background-color: #DFCCFF;
+            background-color: rgb(222, 211, 184);
+            color: #612b84;
+        }
+        .panel.panel-end{
+            border: 1px solid #DFCCFF;
+            background-color: rgb(222, 211, 184);
+            color: #612b84;
+            border-radius: 10px;
+            border: 0;
+            text-align: center;
+        }
+        .panel.panel-footer{
+            border: 1px solid #DFCCFF;
+            background-color: rgb(222, 211, 184);
             color: #612b84;
         }
         .panel.panel-yellow{
@@ -38,12 +51,21 @@
             background-color: #ebe58b;
             color: #000000;
         }
-        .panel.panel-black{
+        .panel.panel-darkred{
             border: 1px solid #000000;
-            background-color: #000000;
+            background-color: #270606;
             color: #FFFFFF;
-            max-height: 1%;
+            border-radius: 3px;
+            border: 0;
         }
+        .panel.panel-darkolive{
+            border: 1px solid #000000;
+            background-color: darkolivegreen;
+            color: #FFFFFF;
+            border-radius: 3px;
+            border: 0;
+        }
+
         .container{
             background-color: blueviolet;
         }
@@ -55,95 +77,128 @@
         section{
             width: 30px;
         }
+        .header-text{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            color:#265279 ;
+        }
         H1{
             font-size: 50px;
             font-weight: bold;
             text-align: center;
             color:#265279 ;
         }
-        H6{
+        .degree{
             text-align: center;
-            color: rgb(84, 143, 71);
+            color: rgb(27, 84, 15);
             font-family: 'Times New Roman', Times, serif;
             font-style: italic;
-            padding: 2px;
+            padding: 4px;
         }
         H4{
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
             font-style: italic;
-            font-size: 12px;
+            font-size: 14px;
+            font-weight: bold;
         }
         img{
             max-width: 30%;
             height: 30%;
             border: 1px solid bisque;
-            border-radius: 50%;
-            background-color: rgb(233, 191, 75);
+            border-radius: 60%;
+            background-color: rgb(222, 211, 184);
         }
-        /* .user{
-            width: 30%;
-            height: 30%;
-            border: 1px solid blue;
-            border-radius: 70px;
-            background-color: darkblue;
+        .img-body{
+            width:100vw;
+            height: 100%;
+            background-color: rgb(222, 211, 184);
         }
-        .logo{
-            width: 140px;
-            height: 140px;
-            border: 1px solid blue;
-            border-radius: 70px;
-            background-color: darkblue;
-        } */
         footer{
             text-align: center;
-            color: darkblue;
             font-family: 'Times New Roman', Times, serif;
             padding: 2px;
             font-size: 16px; 
         }
+            footer a{
+            color: white;
+        }
     </style>
 </head>
-<body class="py-2">
-    <div class="container bg-light mb-1">
+<body class="py-2 px-2">
+    <div class="container-fluid bg-light mb-1">
         <div class="row mb-0" >
             <div class="col-2 panel panel-bisque mb-1  mt-0">
                 <img class="float-left img-fluid" src="./assets/img/logo.png" alt="logo">
             </div>
             <div class="col-8 panel panel-bisque mb-1 mt-0">
-                <h1> Dr N K Ghorai</h1>
-                <h6> MBBS (Cal) MD(Gynae & Obstt)(Cal) </h6> 
+                <h3 class="header-text"> Dr N K Ghorai</h4>
+                <h6 class="degree"> MBBS (Cal) MD(Gynae & Obstt)(Cal) </h6> 
             </div>
             <div class="col-2 float-left panel panel-bisque mb-1 mt-0">
                 <img class="img-fluid" src="./assets/img/MyPhoto.png" alt="user">
              </div>
-            <div class="col-12 panel panel-black mt-0 mb-1">
-                <div class="row h-10">
-                 <H4 class="col-3">Reg.No-44428 of WBMC</H4> 
-                 <h4 class="col-6"> drnkghorai@gmail.com</h4>
-               <h4 class="col-3"> www.drnkghorai.com</h4> 
+            <div class="col-12 panel panel-darkred mt-0 mb-1 py-1">
+                <div class="row">
+                   <div class="col-3">  <H4>Reg.No-44428 of WBMC</H4> </div>
+                   <div  class="col-6"><h4> www.drnkghorai.com</h4></div> 
+                   <div  class="col-3"><h4> drnkghorai@gmail.com</h4></div>
+                   
             </div>
         </div>
      </div>
            <div class="row">
             <div class="col-3 panel panel-bisque">
                 <section style="color: red;">
-                    <div class="box1" id="box1" style="color: red;"><a href="payment_form.html">Registration</a></div>
-                    <div class="box1" id="box1"><a href="Home.html" >Home</a></div> 
-                    <div class="box1" id="box1"><a href="#" >Advice</a> </div> 
-                    <div class="box1" id="box1"><a href="#" >Drugs</a> </div> 
-                    <div class="box1" id="box1"><a href="#" >Contact</a></div> 
+                    <div ><a href="payment_form.html">Registration</a></div>
+                    <div><a href="Home.html" >Home</a></div> 
+                    <div><a href="#" >Advice</a> </div> 
+                    <div><a href="#" >Drugs</a> </div> 
+                    <div><a href="#" >Contact</a></div> 
                 </section>
             </div>
             <div class="col-9 panel p-2  panel-purple">
-                <h2> <span>Course</span></h2>
-                <h2>Study Materials</h2>
-                <h2>Notes</h2>
+                <div class="row">
+                 <div class="col-2">
+                        <h4>Courses</h2>
+                        <h4>Study Materials</h2>
+                        <h4>Notes</h2>
+                        <h4>Videos</h2>
+                        <h4>Pictures</h2>
+                  </div>
                 
+                    <div class="col-7 ms-1">
+                        <div class="row">
+                            <div class="col-2 panel panel-bisque me-1 ">
+                                <img class="float-left img-body" src="./assets/img/logo.png" alt="logo">
+                            </div>
+                            <div class="col-2 panel panel-bisque me-1 ms-1">
+                                <img class="float-left img-fluid " src="./assets/img/logo.png" alt="logo">
+                          
+                            </div>
+                            <div class="col-2 float-left panel panel-bisque me-1 ms-1 ">
+                                <img class="img-fluid " src="./assets/img/MyPhoto.png" alt="user">
+                             </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-2 panel panel-bisque me-1 ">
+                                <img class="float-left img-fluid" src="./assets/img/logo.png" alt="logo">
+                            </div>
+                            <div class="col-2 panel panel-bisque me-1 ms-1">
+                                <img class="float-left img-fluid " src="./assets/img/logo.png" alt="logo">
+                          
+                            </div>
+                            <div class="col-2 float-left panel panel-bisque me-1 ms-1 ">
+                                <img class="img-fluid " src="./assets/img/MyPhoto.png" alt="user">
+                             </div>
+                            </div> 
+                    </div>
+                </div>
             </div>
            </div>
            <div class="row">
-            <div class="col-12 panel panel-pink">
+            <div class="col-12 panel panel-darkolive py-2 text-white">
                 <footer >
                     <a href="#">FAQ |</a>
                     <a href="#">Contact us |</a>
@@ -153,16 +208,11 @@
                     <a href="#">&copy;2024 | Dr Ghorai</a>
                 </footer>
             </div>
-            <div class="col-4 panel panel-blue">This is col -4</div>
+            <div class="col-12 panel panel-end py-1">Our Terms and conditions</div>
            </div>
     </div>
 </div>
-        
-    </div>
-   
-    
-
-</div>
+ </div>
 <script src="script.js"></script>
 </body>
 </html>
