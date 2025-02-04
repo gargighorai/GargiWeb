@@ -63,8 +63,18 @@
           border: bisque;
       }
       .panel.panel-darkolive{
+          color: white;
           background-color: darkolivegreen;
-          color: #FFFFFF;
+          height: 30px;
+          text-align: center;
+      }
+      .payment {
+        color: darkblue;
+        background-color: white;
+        border: none;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+
       }
 
       .container{
@@ -105,10 +115,10 @@
           font-weight: bold;
       }
       img{
-          max-width: 30%;
-          height: 30%;
+         width: 30vw;
+          height: 30vh;
           border: 1px solid bisque;
-          border-radius: 60%;
+          border-radius: 100%;
           background-color: rgb(222, 211, 184);
       }
       .img-body{
@@ -149,68 +159,109 @@
       </div>
   </div>
 </div>
-<div class="col-8 panel panel-bisque mt-2 mb-1  ms-4 " >
+<div class="row mb-0" >
+  <div class="col-7 panel panel-bisque mb-1  mt-0">
     <form  action="" >
-       <h2 class="main_heading" style="text-align: center; color: darkgreen;"
-       >Payment Form</h2>
-       <hr>
-       <h3>User Information</h3>
-       <h4 class=" panel panel-red col-6">Required fields are marked with *</h4> 
-       <p>Name: * <input type="text" name="name" value="" required placeholder="Name">
-       </p>
-       <Fieldset>
-        <legend> Gender</legend>
-       <p>
-       Male: <input type="radio" name="gender" id="male" placeholder="name">
-       Female: <input type="radio" name="gender" id="female">
+      <h2 class="main_heading" style="text-align: center; color: darkgreen;"
+      >Payment Form</h2>
+      <hr>
+      <h3>User Information</h3>
+      <h4 class=" panel panel-red col-7">Required fields are marked with *</h4> 
+      <p>Name: * <input type="text" name="name" value="" required placeholder="Name">
       </p>
-    </Fieldset>
-    <p><label>Address *</label>
-        <input type="text" name="address" id="address" cols="30" rows="2" placeholder="address"></textarea>
-      </p>
+      <Fieldset>
+       <legend> Gender</legend>
       <p>
-        Email: * <input type="email" name="email" id="email" placeholder="email" required></textarea>
-      </p>
-      <p>
-        Mobile *:<input type="number" name="mobile" id="mobile" placeholder="mobile" ></textarea>
-      </p>
-      <p>
-        Pincode *: <input type="number" name="pincode" placeholder="pincode" id="pincode">
-      </p>
-    <hr>
-      <h3>Payment Information</h3>
-      <p> Card type: *
-        <select name="card_type" id="card_type" required>
-            <option value="">--Select a card type--</option>
-            <option value="visa">Visa</option>
-            <option value="rupay">Rupay</option>
-            <option value="mastarcard">Master card</option>
-        </select>
-      </p>
-      <p>
-        Card Number: * <input type="number" name="card_no" id="card_no" placeholder="1111-2222-3333-4444">
-      </p>
-      <p>
-        Exp Date: <input type="date" name="exp_date" id="exp_date">
-      </p>
-      <p>
-        CVV: <input type="password" name="cvv" id="cvv"> </p>
-        <input type="submit" value="Pay Now">
+      Male: <input type="radio" name="gender" id="male" placeholder="name">
+      Female: <input type="radio" name="gender" id="female">
+     </p>
+   </Fieldset>
+   <p><label>Address *</label>
+       <input type="text" name="address" id="address" cols="30" rows="2" placeholder="address"></textarea>
+     </p>
+     <p>
+       Email: * <input type="email" name="email" id="email" placeholder="email" required></textarea>
+     </p>
+     <p>
+       Mobile *:<input type="number" name="mobile" id="mobile" placeholder="mobile" ></textarea>
+     </p>
+     <p>
+       Pincode *: <input type="number" name="pincode" placeholder="pincode" id="pincode">
+     </p>
+   <hr>
+     <h3>Payment Information</h3>
+     <p> Card type: *
+       <select name="card_type" id="card_type" required>
+           <option value="">--Select a card type--</option>
+           <option value="visa">Visa</option>
+           <option value="rupay">Rupay</option>
+           <option value="mastarcard">Master card</option>
+       </select>
+     </p>
+     <p>
+       Card Number: * <input type="number" name="card_no" id="card_no" placeholder="1111-2222-3333-4444">
+     </p>
+     <p>
+       Exp Date: <input type="date" name="exp_date" id="exp_date">
+     </p>
+     <p>
+       CVV: <input type="password" name="cvv" id="cvv"> </p>
+       <div>
+        <input class="col-12 panel panel-blue" type="submit" value="Pay Now">
+       </div>
     </form>
   </div>
-        <div class="row">
-            <div class="col-12 panel-darkolive  py-2 text-white">
-                <footer >
-                    <a href="#">FAQ |</a>
-                    <a href="#">Contact us |</a>
-                    <a href="#">Terms of use  |</a>
-                    <a href="#">Privacy policy  ||</a>
-                    <a href="#">Refund Policy |</a>
-                    <a href="#">&copy;2024 | Dr Ghorai</a>
-                </footer>
-            </div>
-            
+  <div class="col-5  panel-blue mb-1 mt-5">
+    <div class="col-12  payment mt-0 py-0 p-1" >
+     
+      <H4>Payment Summary</H4>
+        <table class="payment col-12">
+          
+          <tr >
+            <td>Name:</td>
+            <td>Mrs Swarnali Ganguly</td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td>27 yrs</td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td>Diamond Park Joka</td>
+          </tr>
+          <tr>
+            <td>Husband:</td>
+            <td>Mr Anindya Ganguly</td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>drnkghorai@gmail.com</td>
+          </tr>
+          <tr>
+            <td> Paid:</td>
+            <td>Rs 1500/-</td>
+          </tr>
+        </table>
+       </div>
+    
   </div>
+</div>
+
+  
+</div>
+ <hr>
+
+  <div class="row">
+    <div class="col-12  panel-darkolive  py-2 text-white">
+        <footer class="py-0">
+            <a href="#">FAQ |</a>
+            <a href="#">Contact us |</a>
+            <a href="#">Terms of use  |</a>
+            <a href="#">Privacy policy  ||</a>
+            <a href="#">Refund Policy |</a>
+            <a href="#">&copy;2024 | Dr Ghorai</a>
+        </footer>
+    </div>
+   </div>
 </body>
-      
 </html>
