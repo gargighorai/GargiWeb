@@ -11,7 +11,7 @@
      <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <style>
+    <style>
       .panel.panel-bisque{
           border: 1px solid bisque;
           background-color: bisque;
@@ -70,13 +70,21 @@
       }
       .payment {
         color: darkblue;
-        background-color: white;
         border: none;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 12px;
+        font-size: 14px;
 
       }
-
+      .card{
+        width:2rem;
+        height:1rem;
+        align-content: start;
+        align-items: start;
+      }
+      
+legend{
+  font-size: 12px;
+}
       .container{
           background-color: blueviolet;
       }
@@ -107,12 +115,32 @@
           font-style: italic;
           padding: 4px;
       }
+      .credit{
+        max-width: 20vw;
+        min-height: 10vh;
+      }
+      h3{
+        text-align: center;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 18px;
+          font-weight: bold;
+          padding: 0;
+      }
       H4{
           text-align: center;
           font-family: 'Times New Roman', Times, serif;
+          font-size: 16px;
           font-style: italic;
-          font-size: 14px;
           font-weight: bold;
+          padding: 0,2px 0 5px;
+      }
+      th{
+        font-size: 18px;
+        text-align: center;
+      }
+      td{
+        padding-right: 12px;
+        text-align: end;
       }
       img{
          width: 30vw;
@@ -159,64 +187,101 @@
       </div>
   </div>
 </div>
-<div class="row mb-0" >
-  <div class="col-7 panel panel-bisque mb-1  mt-0">
-    <form  action="" >
-      <h2 class="main_heading" style="text-align: center; color: darkgreen;"
-      >Payment Form</h2>
-      <hr>
-      <h3>User Information</h3>
-      <h4 class=" panel panel-red col-7">Required fields are marked with *</h4> 
-      <p>Name: * <input type="text" name="name" value="" required placeholder="Name">
-      </p>
-      <Fieldset>
-       <legend> Gender</legend>
-      <p>
-      Male: <input type="radio" name="gender" id="male" placeholder="name">
-      Female: <input type="radio" name="gender" id="female">
-     </p>
-   </Fieldset>
-   <p><label>Address *</label>
-       <input type="text" name="address" id="address" cols="30" rows="2" placeholder="address"></textarea>
-     </p>
-     <p>
-       Email: * <input type="email" name="email" id="email" placeholder="email" required></textarea>
-     </p>
-     <p>
-       Mobile *:<input type="number" name="mobile" id="mobile" placeholder="mobile" ></textarea>
-     </p>
-     <p>
-       Pincode *: <input type="number" name="pincode" placeholder="pincode" id="pincode">
-     </p>
-   <hr>
-     <h3>Payment Information</h3>
-     <p> Card type: *
-       <select name="card_type" id="card_type" required>
-           <option value="">--Select a card type--</option>
-           <option value="visa">Visa</option>
-           <option value="rupay">Rupay</option>
-           <option value="mastarcard">Master card</option>
-       </select>
-     </p>
-     <p>
-       Card Number: * <input type="number" name="card_no" id="card_no" placeholder="1111-2222-3333-4444">
-     </p>
-     <p>
-       Exp Date: <input type="date" name="exp_date" id="exp_date">
-     </p>
-     <p>
-       CVV: <input type="password" name="cvv" id="cvv"> </p>
-       <div>
-        <input class="col-12 panel panel-blue" type="submit" value="Pay Now">
-       </div>
-    </form>
-  </div>
-  <div class="col-5  panel-blue mb-1 mt-5">
-    <div class="col-12  payment mt-0 py-0 p-1" >
+<div class="row" >
+  <table class="payment col-6 panel panel-bisque ms-1">
+    <h3 class="panel panel-bisque" >Payment form</h3>
+    <form  action="" class="ms-4" >
+      <th colspan="7">User Information </th>
+        <tr>
+            <td colspan="2">
+              <h4 class="h6 panel panel-red">Required fields are marked with *</h4> </td>
+        </tr>
      
-      <H4>Payment Summary</H4>
-        <table class="payment col-12">
-          
+    <tr>
+      <td>Name: *</td>
+      <td><input type="text" name="name" value="" required placeholder="Name"></td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><input type="text" name="Age" value="" required placeholder="Age"></td>
+    </td>
+    </tr>
+    <tr>
+      <td>Gender :</td>
+      <td><Fieldset> <legend> 
+        Male: <input type="radio" name="gender" id="male" placeholder="name">
+      <label> Female:</label><input type="radio" name="gender" id="female"> 
+ </legend></Fieldset></td>
+    </tr>
+    <tr>
+      <td>Address *</td>
+      <td> <input type="text" name="address" id="address" cols="30" rows="2" placeholder="address"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>Email:* </td>
+      <td>  <input type="email" name="email" id="email" placeholder="email" required></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>  Mobile *: </td>
+      <td> <input type="number" name="mobile" id="mobile" placeholder="mobile" ></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td> Pincode *: </td>
+      <td> <input type="number" name="pincode" placeholder="pincode" id="pincode">
+      </td>
+    </tr>
+      <tr>
+          <td class="col-6">
+            <th colspan="2">User Information </th>
+           </td>
+      </tr>
+        <tr>
+         <td>Cardtype: *</td>
+         <td><select name="card_type" id="card_type" required>
+          <option value="">--Select a card type--</option>
+          <option value="visa">Visa</option>
+          <option value="rupay">Rupay</option>
+          <option value="mastarcard">Master card</option></select></td>
+        </tr>
+        <tr><td colspan="1"><img class="card px-0"  src="./assets/img/credit.png" alt="credit"></td>
+            <td colspan="1"><img class="card px-0" src="./assets/img/debit.png" alt="credit"></td>
+            <td colspan="1"><img class="card px-0" src="./assets/img/credit.png" alt="credit"></td>
+            <td colspan="1"><img class="card px-0" src="./assets/img/debit.png" alt="credit"></td>
+        </td>
+        </td>
+         </tr>
+       </select>
+  </tr>
+        <tr>
+          <td>Card Number:*</td>
+          <td> <input type="number" name="card_no" id="card_no" placeholder="1111-2222-3333-4444">
+          </td>
+        </tr>
+        <tr>
+          <td>Expiry Date:*</td>
+          <td> <input type="date" name="exp_date" id="exp_date">
+          </td>
+        </tr>
+        <tr>
+          <td>CVV: *</td>
+          <td><input type="password" name="cvv" id="cvv"></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <input class="col-12 panel panel-blue" type="submit" value="Pay Now">
+           </td>
+        </tr>
+   </form>
+  </table>
+  
+  <div class="col-4  panel-blue mb-1 mt-5">
+    <div class="col-12   mt-0 py-0 p-1" >
+     
+      <H4 class="panel panel-pink py-0">Payment Summary</H4>
+        <table class="payment col-12 panel panel-bisque">
           <tr >
             <td>Name:</td>
             <td>Mrs Swarnali Ganguly</td>
@@ -243,15 +308,11 @@
           </tr>
         </table>
        </div>
-    
-  </div>
+    </div>
 </div>
-
-  
 </div>
  <hr>
-
-  <div class="row">
+ <div class="row">
     <div class="col-12  panel-darkolive  py-2 text-white">
         <footer class="py-0">
             <a href="#">FAQ |</a>
