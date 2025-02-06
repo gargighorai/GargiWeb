@@ -76,10 +76,9 @@
 
       }
       .card{
-        width:2rem;
-        height:1rem;
-        align-content: start;
-        align-items: start;
+        width:2.5rem;
+        height:1.8rem;
+        align-content: center;
       }
       
 legend{
@@ -143,10 +142,10 @@ legend{
         text-align: end;
       }
       img{
-         width: 30vw;
+         max-width: 20vw;
           height: 30vh;
           border: 1px solid bisque;
-          border-radius: 100%;
+          border-radius: 60%;
           background-color: rgb(222, 211, 184);
       }
       .img-body{
@@ -188,10 +187,10 @@ legend{
   </div>
 </div>
 <div class="row" >
-  <table class="payment col-6 panel panel-bisque ms-1">
-    <h3 class="panel panel-bisque" >Payment form</h3>
-    <form  action="" class="ms-4" >
-      <th colspan="7">User Information </th>
+  <table class="payment col-6 panel panel-bisque ms-1 py-0">
+    <h3 class="panel panel-bisque py-1" >Payment form</h3>
+    <form  action="" class="panel py-3" >
+      <th colspan="">User Information </th>
         <tr>
             <td colspan="2">
               <h4 class="h6 panel panel-red">Required fields are marked with *</h4> </td>
@@ -208,10 +207,9 @@ legend{
     </tr>
     <tr>
       <td>Gender :</td>
-      <td><Fieldset> <legend> 
+      <td>
         Male: <input type="radio" name="gender" id="male" placeholder="name">
-      <label> Female:</label><input type="radio" name="gender" id="female"> 
- </legend></Fieldset></td>
+       Female:<input type="radio" name="gender" id="female"> </td>
     </tr>
     <tr>
       <td>Address *</td>
@@ -233,11 +231,13 @@ legend{
       <td> <input type="number" name="pincode" placeholder="pincode" id="pincode">
       </td>
     </tr>
-      <tr>
-          <td class="col-6">
-            <th colspan="2">User Information </th>
-           </td>
-      </tr>
+       <tr>
+      <td colspan="2"><hr></td></tr>
+        <th colspan="2" style="text-align:start">Payment Information </th>
+       </tr>
+       <tr>
+        <td colspan="2"><hr></td>
+       </tr> 
         <tr>
          <td>Cardtype: *</td>
          <td><select name="card_type" id="card_type" required>
@@ -246,13 +246,15 @@ legend{
           <option value="rupay">Rupay</option>
           <option value="mastarcard">Master card</option></select></td>
         </tr>
-        <tr><td colspan="1"><img class="card px-0"  src="./assets/img/credit.png" alt="credit"></td>
-            <td colspan="1"><img class="card px-0" src="./assets/img/debit.png" alt="credit"></td>
-            <td colspan="1"><img class="card px-0" src="./assets/img/credit.png" alt="credit"></td>
-            <td colspan="1"><img class="card px-0" src="./assets/img/debit.png" alt="credit"></td>
-        </td>
-        </td>
+        <tr>
+            <td colspan="2"><div class="image-row">
+            <img class="card px-0 ms-1 me-1"  src="./assets/img/credit.png" alt="credit">
+            <img class="card px-0 ms-1 me-1" src="./assets/img/debit.png" alt="credit">
+            <img class="card px-0 ms-1 me-1" src="./assets/img/credit.png" alt="credit">
+            <img class="card px-0 ms-1 me-3" src="./assets/img/debit.png" alt="credit">
          </tr>
+        </div>
+      </td>
        </select>
   </tr>
         <tr>
@@ -271,7 +273,8 @@ legend{
         </tr>
         <tr>
           <td colspan="4">
-            <input class="col-12 panel panel-blue" type="submit" value="Pay Now">
+            <input class="btn btn-lg panel panel-darkolive " type="submit" value="Pay Now">
+         
            </td>
         </tr>
    </form>
